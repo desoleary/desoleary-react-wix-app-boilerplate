@@ -5,7 +5,7 @@
     "scripts": {
         "build": "react-app-rewired build",
         "build-storybook": "build-storybook -s public",
-        "cypress": "npx run concurrently 'wait-on http://localhost:3000 --reverse && react-app-rewired start' 'cypress open'",
+        "cypress": "yarn run concurrently 'wait-on http://localhost:3000 --reverse && react-app-rewired start' 'cypress open'",
         "eject": "react-scripts eject",
         "jest": "npx jest --testTimeout 3000 --cache  --colors",
         "package-json:format": "npx sort-package-json",
@@ -46,31 +46,6 @@
     "eslintConfig": {
         "extends": "react-app"
     },
-    "jest": {
-        "collectCoverageFrom": [
-            "src/**/*.{ts,tsx}",
-            "!<rootDir>/src/**/*.test.{js,jsx}",
-            "!<rootDir>/src/**/*.stories.{js,jsx}",
-            "!<rootDir>/src/serviceWorker.ts",
-            "!<rootDir>/src/setupTest.ts",
-            "!<rootDir>/src/react-app-env.d.ts"
-        ],
-        "coverageThreshold": {
-            "global": {
-                "statements": 98,
-                "branches": 91,
-                "functions": 98,
-                "lines": 98
-            }
-        },
-        "moduleNameMapper": {
-            ".*\\.(css|less|styl|scss|sass)$": "<rootDir>/src/internals/mocks/cssModule.js",
-            ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/internals/mocks/image.js"
-        },
-        "transformIgnorePatterns": [
-            "node_modules/(?!(lodash-es|redux)/)"
-        ]
-    },
     "dependencies": {
         "clean-webpack-plugin": "^3.0.0",
         "copy-webpack-plugin": "^6.1.0",
@@ -99,6 +74,7 @@
         "@storybook/node-logger": "^6.0.21",
         "@storybook/preset-create-react-app": "^3.1.4",
         "@storybook/react": "^6.0.21",
+        "@stylable/jest": "^3.10.1",
         "@stylable/webpack-plugin": "^3.10.1",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^11.0.2",
@@ -118,6 +94,7 @@
         "cypress": "^5.1.0",
         "global": "^4.4.0",
         "husky": ">=4",
+        "identity-obj-proxy": "^3.0.0",
         "jest-extended": "^0.11.5",
         "jsdom": "^16.4.0",
         "lint-staged": ">=10",
@@ -131,6 +108,7 @@
         "tslint-react": "^5.0.0",
         "typescript": "^3.9.4",
         "typescript-tslint-plugin": "^0.5.5",
-        "wait-on": "^5.2.0"
+        "wait-on": "^5.2.0",
+        "wix-ui-test-utils": "^1.0.174"
     }
 }

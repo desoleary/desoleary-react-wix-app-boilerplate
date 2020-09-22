@@ -1,7 +1,7 @@
 {
     "extends": "./tsbaseconfig.json",
     "compilerOptions": {
-        "allowJs": false,
+        "allowJs": true,
         "alwaysStrict": true,
         "jsx": "react",
         "lib": [

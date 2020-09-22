@@ -6,6 +6,6 @@ context('App', () => {
   });
 
   it('renders app without errors', () => {
-    cy.get('#root').should('contain.text', 'List of US Presidents');
+    cy.get('#root').should('contain.text', 'Learn some react with Wix components');
   });
 });

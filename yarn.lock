@@ -2441,6 +2441,15 @@
     "@stylable/module-utils" "^3.6.2"
     "@stylable/runtime" "^3.6.2"
 
+"@stylable/jest@^3.10.1":
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/@stylable/jest/-/jest-3.10.1.tgz#91febd0c69ee8fee1e486d98e37d1a5049d73530"
+  integrity sha512-+0JkwE7HPylVPFqOERGimEPBqUu02RJCux2g8J1Zd3PSXJl28x9L1X/ZAXusBXqhce4x0r+K4kCdQeDMZrjZEg==
+  dependencies:
+    "@stylable/core" "^3.10.1"
+    "@stylable/module-utils" "^3.10.1"
+    "@stylable/runtime" "^3.10.0"
+
 "@stylable/module-utils@3.6.2":
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/@stylable/module-utils/-/module-utils-3.6.2.tgz#652b6d21c028be978737ffa8d6168cc3134ffccb"
@@ -8785,7 +8794,7 @@ icss-utils@^4.0.0, icss-utils@^4.1.1:
   dependencies:
     postcss "^7.0.14"
 
-identity-obj-proxy@3.0.0:
+identity-obj-proxy@3.0.0, identity-obj-proxy@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/identity-obj-proxy/-/identity-obj-proxy-3.0.0.tgz#94d2bda96084453ef36fbc5aaec37e0f79f1fc14"
   integrity sha1-lNK9qWCERT7zb7xarsN+D3nx/BQ=
@@ -17031,7 +17040,7 @@ wix-ui-icons-common@^2.0.0, wix-ui-icons-common@^2.0.278:
   resolved "https://registry.yarnpkg.com/wix-ui-icons-common/-/wix-ui-icons-common-2.0.284.tgz#8953545e77fecb17ef03c200663aa7bee820cf19"
   integrity sha512-mKRcnD4e7AsC928FRbqU3kb9UGZ/pKdJfzBLvV+hHGjhvgNFI+4uidPFIVSZBMCDGV45TrIPQMIab3+d5FlXzQ==
 
-wix-ui-test-utils@^1.0.151, wix-ui-test-utils@^1.0.172:
+wix-ui-test-utils@^1.0.151, wix-ui-test-utils@^1.0.172, wix-ui-test-utils@^1.0.174:
   version "1.0.174"
   resolved "https://registry.yarnpkg.com/wix-ui-test-utils/-/wix-ui-test-utils-1.0.174.tgz#016f8db4f0fc2ca5a7fb7a5cdbaa8a22347ef351"
   integrity sha512-53EejYDocgaVmhznoI8Zprld3bVJw7XoQFq/Ggo8TdQ7c29Y/hUWBb1cLu/DeWCb+znca51fjFZQdnmErMW5vQ==
